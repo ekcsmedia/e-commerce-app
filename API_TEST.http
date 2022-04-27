@@ -1,0 +1,19 @@
+POST https://yourbrand.furnitureshops.in/wp-json/wc/v3/addtocart HTTP/1.1
+content-type: application/json
+
+{
+    "user_id" : 1,
+    "products" :
+
+    [
+        {
+                "product_id" : 210,
+                "quantity" : 8
+        }
+    ]
+ } 
+
+
+###
+ GET https://yourbrand.furnitureshops.in/wp-json/wc/v3/cart?user_id=1 
+ content-type: application/json
